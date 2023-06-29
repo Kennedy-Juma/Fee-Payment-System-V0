@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>OnlineFeePaymentSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<session-config>
+		<session-timeout>15</session-timeout>
+	</session-config>
+	
+	<context-param>
+	<param-name>stripePublicKey</param-name>
+	<param-value>pk_test_51ICIjKEEyhsXjUxasBS5VdbxlQMVa6Tx0gWaeOKSranZgNFz6UWEqLJsCCmDiA8aEg3sbUNZh1dnJCk0XTH0UXjE00ATv3JAqC</param-value>
+	</context-param>
+	
+	<context-param>
+	<param-name>stripeSecretKey</param-name>
+	<param-value>sk_test_51ICIjKEEyhsXjUxaUlVEy0SXs9kE4jiaDXUxIVrqr3nuvi8LZ6zvD20ZIVk7N6zTHqO02JcsbDgbkFM030pIlWUg00rZFpXCot</param-value>
+	</context-param>
+</web-app>
